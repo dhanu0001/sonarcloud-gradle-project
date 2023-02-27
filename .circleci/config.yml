@@ -12,7 +12,7 @@ jobs:
           working_directory: /home/circleci/project
           name: Install dependencies
           command: |
-           gradle build
+           ls -lrt
 
       # - run: ./gradlew build
       # - run:
