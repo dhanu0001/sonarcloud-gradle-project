@@ -13,6 +13,7 @@ jobs:
           name: Install dependencies
           command: |
            ls -lrt
+           ./gradlew build
 
       # - run: ./gradlew build
       # - run:
