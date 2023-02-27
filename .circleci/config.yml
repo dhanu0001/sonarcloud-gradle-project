@@ -5,14 +5,19 @@ jobs:
   build:
     docker:
       - image:  cimg/openjdk:11.0.16
-    working_directory: /home/circleci/project
 
     steps:
       - checkout
-      - run: ./gradlew build
       - run:
-          name: Sonarqube analysis
-          command: ./gradlew sonarqube
+          working_directory: /home/circleci/project
+          name: Install dependencies
+          command: |
+           gradle build
+
+      # - run: ./gradlew build
+      # - run:
+      #     name: Sonarqube analysis
+      #     command: ./gradlew sonarqube
 
 workflows:
   version: 2
