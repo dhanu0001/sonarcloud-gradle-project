@@ -23,7 +23,7 @@ dependencies {
       property "sonar.projectKey", "saks-code-repo"
       property "sonar.organization", "dhanu0001"
       property "sonar.host.url", "https://sonarcloud.io"
-      property "sonar.login", "97e22ce748b6b6855d1f1fcd0e3ca2323abd0219"
+      property "sonar.login", "7ee42a88ae8539b3bf2c4534809d6cb522655bef"
     }
   }
 }
